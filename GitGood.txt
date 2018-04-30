@@ -1,0 +1,44 @@
+/**********************************************cours 1*******************************************************/
+git clone <name of the repository>
+git status pour connaitre l'etat d'un fichier(est-il dans git,est-ce qu'il y a eu un changement,etc)
+git add <file name> pour inclure dans le commit -A pour inclure tout les fichiers.
+git commit pour ajouter les fichier au repository -m ="ajouter un message"
+git push pour envoyer les fichier dans le repository
+git pull pour aller chercher les fichier dans le repository
+
+faire le git pull en premier pour etre sur d'avoir la version la plus à jour
+
+pour resoudre un conflit:
+1.resoudre le conflit dans le document (communication et changement dans le document)
+2.git add -A
+3.git commit mais tout seul(sans -m ou autre)
+4.pour sortir de la fenetre qui nous bloque apres, faire escape et ":wq" (ne pas faire les "")
+
+faire un commit sans -m permet d'ecrire un message multi ligne et pour sortir il faut faire escape ":wq"
+faire -m c'est pour un message d'une ligne et donc un enter fait l'affaire pour sortir
+/********************************************cours 2*********************************************************/
+Les branches
+git branch affiche les branche
+git branch <nom de la branche> crée une branche de plus
+git checkout <nom de la branche> on se deplace dans la branche avec le nom
+apres les changements faire gid add et git commit
+
+
+Le merge
+retourner sur master
+faire un pull s'assurer qu'il ny a eu aucun changement
+si il y a un changement retourner sur l'autre branche et faire
+git merge <master dans ce cas> pour apporter les changement de master dans notre branche
+si il y a un conflit voir resolution de conflit cours 1
+git push si il y a une erreur, faire le git push qui devrait apparaitre a l'ecran avec les -variable
+
+
+dans le doute aller sur github pour comparer les fichiers
+dans github
+create a "pull request" ecrire un petit message et "send pull request"
+si c correct faire un "merge pull request" et "confirm"
+et si encore correct on peut "delete branch" car elle n'est plus utile
+
+dans l'invite de commande
+retourner dans la branche master (dans ce cas) et faire un pull
+
